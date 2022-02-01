@@ -35,19 +35,7 @@ class Calendar : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // получаем ссылку на макет фрагмента
-        val fragmentLayout = inflater.inflate(R.layout.calendar, container, false)
-
-        // получаем ссылку на NavController (навигационный контроллер)
-        val navController = NavHostFragment.findNavController(this)
-
-        // слушатели кнопок, которые передают адрес навигационному контроллеру
-        fragmentLayout.button2.setOnClickListener { navController.navigate(R.id.schedule) }
-        fragmentLayout.button3.setOnClickListener { navController.navigate(R.id.history) }
-        fragmentLayout.button4.setOnClickListener { navController.navigate(R.id.info) }
-
-        // возвращаем макет фрагмента
-        return fragmentLayout
+        return inflater.inflate(R.layout.calendar, container, false)
     }
 
     companion object {
