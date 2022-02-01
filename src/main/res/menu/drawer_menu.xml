@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/calendar"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Календарь"/>
+        <item
+            android:id="@+id/schedule"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="Расписание"/>
+        <item
+            android:id="@+id/history"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="История"/>
+        <item
+            android:id="@+id/info"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Информация о таблетках"/>
+    </group>
+
+</menu>

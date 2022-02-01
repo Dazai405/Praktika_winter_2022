@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes"
+    app:startDestination="@id/calendar">
+
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.example.navigation.Calendar"
+        android:label="Календарь"
+        tools:layout="@layout/calendar">
+        <action
+            android:id="@+id/action_calendar_to_info"
+            app:destination="@id/info" />
+        <action
+            android:id="@+id/action_calendar_to_schedule"
+            app:destination="@id/schedule" />
+        <action
+            android:id="@+id/action_calendar_to_history"
+            app:destination="@id/history" />
+    </fragment>
+    <fragment
+        android:id="@+id/schedule"
+        android:name="com.example.navigation.Schedule"
+        android:label="Расписание"
+        tools:layout="@layout/schedule" />
+    <fragment
+        android:id="@+id/history"
+        android:name="com.example.navigation.History"
+        android:label="История"
+        tools:layout="@layout/history" />
+    <fragment
+        android:id="@+id/info"
+        android:name="com.example.navigation.Info"
+        android:label="Информацио о таблетках"
+        tools:layout="@layout/info" />
+</navigation>
